@@ -1,0 +1,44 @@
+{% extends 'admin/dashboard_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1 style="color: #000000; text-align: center; margin:10px">Email Potential Client:</h1>
+    <div class="card mb-4" style="margin: 10px;">
+        <div class="card-body">
+            <div class="col-lg-12 colmd-12 col-sm-12" style="overflow-x: auto;">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr>
+                            <th>#ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Message</th>
+                            <th>Date</th>
+                            <th>Discipline</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>{{ potential_client.id }}</td>
+                        <td>{{ potential_client.first_name }}</td>
+                        <td>{{ potential_client.last_name }}</td>
+                        <td>{{ potential_client.email }}</td>
+                        <td>{{ potential_client.message }}</td>
+                        <td>{{ potential_client.date }}</td>
+                        <td>{{ potential_client.get_discipline_display }}</td>
+                    </tr>
+                </table>
+            <form method="post" action="{% url 'email_potential_client' potential_client.id %}">
+                {% csrf_token %}
+                <strong>{{ form|crispy }}</strong>
+                <div class="slider-btn">
+                    <button type="submit" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Send Email</button>
+                </div>
+            </form>
+            <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'potential_clients' %}">Go Back</a></button>
+        </div>
+    </div>
+    </div>
+
+{% endblock content %}

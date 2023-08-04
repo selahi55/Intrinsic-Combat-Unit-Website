@@ -1,0 +1,50 @@
+{% extends 'admin/dashboard_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <h1 style="color: #000000; text-align: center; margin:10px">Edit Trainer <em>{{ trainer.first_name }} {{ trainer.last_name }}</em></h1>    <h4 style="color: #000000; text-align: center;">Personal Info Not Editable</h4>
+    <div class="card mb-4" style="margin: 10px;">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            <strong>Total Clients: </strong>
+        </div>
+        <div class="card-body">
+                 <table id="datatablesSimple">
+                    <thead>
+                        <tr>
+                            <th>ID#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email <!--{% if trainers %}<a href="{% url 'email_all_trainers' %}">(Click here to email all)</a>{% endif %}--></th>
+                            <!-- Clients and Classes -->
+                            <th>Percentage</th>
+                            <th>Age</th>
+                            <th>Joined</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>{{ trainer.trainer_id }}</td>
+                            <td>{{ trainer.first_name }}</td>
+                            <td>{{ trainer.last_name }}</td>
+                            <td>{{ trainer.email }}</td>
+                            <td>{{ trainer.percent }}%</td>
+                            <td>{{ trainer.age }}</td>
+                            <td>{{ trainer.joined }}</td>
+                        </tr>
+                    </table>
+                <form method="post" action="{% url 'edit_trainer' trainer.trainer_id %}">
+                    {% csrf_token %}
+                    <strong>{{ form|crispy }}</strong>
+                    <div class="slider-btn">
+                        <button type="submit" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s" style="
+                        color: white;
+                        background: black;
+                        ">Edit</button>                     
+                    </div>
+                </form>
+                <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'trainers' %}">Go Back</a></button>
+            </div>
+        </div>
+{% endblock content %}
