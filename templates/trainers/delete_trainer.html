@@ -32,7 +32,7 @@
                         <td><a href="{% url 'edit_trainer' trainer.trainer_id %}" style="color: blue;">Edit</a> / <a href="{% url 'delete_trainer' trainer.trainer_id %}" style="color: blue;">Delete</a></td>
                     </tr>
                 </table>
-            <form method="post" action="{% url 'delete_trainer' trainer.trainer_id %}">
+            <form method="post" action="{% url 'dashboard:delete_trainer' trainer.trainer_id %}">
                 {% csrf_token %}
                 <div class="slider-btn">
                     <button type="submit" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s" style="
@@ -41,7 +41,7 @@
                     ">Delete</button>                
                 </div>
             </form>
-            <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'trainers' %}">Go Back</a></button>
+            <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'dashboard:trainers' %}">Go Back</a></button>
         </div>
     </div>
 

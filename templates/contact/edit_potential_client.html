@@ -32,7 +32,7 @@
                             <td>{{ potential_client.get_discipline_display }}</td>
                         </tr>
                     </table>
-                <form method="post" action="{% url 'edit_potential_client' potential_client.id %}">
+                <form method="post" action="{% url 'dashboard:edit_potential_client' potential_client.id %}">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="slider-btn">
@@ -41,7 +41,7 @@
                         background: black;
                         ">Edit</button>                     </div>
                 </form>
-                <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'potential_clients' %}">Go Back</a></button>
+                <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'dashboard:potential_clients' %}">Go Back</a></button>
             </div>
         </div>
 {% endblock content %}

@@ -18,7 +18,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="{% url 'admin_dashboard' %}"><img src="{% static 'img/logo/w_logo.png' %}" alt="logo" style="max-width: 20%;"><em> Admin-ICU</em></a>
+        <a class="navbar-brand ps-3" href="{% url 'dashboard:admin_dashboard' %}"><img src="{% static 'img/logo/w_logo.png' %}" alt="logo" style="max-width: 20%;"><em> Admin-ICU</em></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -37,7 +37,7 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    <li><a class="dropdown-item" href="{% url 'accounts:logout' %}">Logout</a></li>
                 </ul>
             </li>
         </ul>
@@ -50,61 +50,36 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="{% url 'admin_dashboard' %}">
+                        <a class="nav-link" href="{% url 'dashboard:admin_dashboard' %}">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="{% url 'dashboard:insights' %}">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-database"></i></div>
                             Insights
                         </a>
                         <div class="sb-sidenav-menu-heading">Management</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseClients" aria-expanded="false" aria-controls="collapseClients">
+                        <a class="nav-link collapsed" href="{% url 'dashboard:clients' %}" >
                             <div class="sb-nav-link-icon"><i class="fa-regular fa-user"></i></div>
                             Clients
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseClients" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">See all</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Management</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTrainers" aria-expanded="false" aria-controls="collapseTrainers">
+                        <a class="nav-link collapsed" href="{% url 'dashboard:trainers' %}">
                             <div class="sb-nav-link-icon"><i class="fa-regular fa-address-card"></i></div>
                             Trainers
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseTrainers" aria-labelledby="headingTrainers" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <!-- Trainer links here -->
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
+                        <a class="nav-link collapsed" href="{% url 'dashboard:potential_clients' %}">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-phone"></i></div>
                             Contact
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseContact" aria-labelledby="headingContact" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <!-- Contact links here -->
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCMS" aria-expanded="false" aria-controls="collapseCMS">
+                        <a class="nav-link collapsed" href="{% url 'dashboard:insights' %}">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-list-check"></i></div>
                             CMS
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseCMS" aria-labelledby="headingCMS" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <!-- CMS links here -->
-                            </nav>
-                        </div>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    {{ request.user.username }}
                 </div>
             </nav>
         </div>
@@ -128,11 +103,11 @@
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Intrinsic Combat Unit</div>
-                            <div>
+                            <!-- <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
                                 <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </footer>

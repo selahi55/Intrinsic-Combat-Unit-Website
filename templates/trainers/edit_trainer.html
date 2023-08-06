@@ -34,7 +34,7 @@
                             <td>{{ trainer.joined }}</td>
                         </tr>
                     </table>
-                <form method="post" action="{% url 'edit_trainer' trainer.trainer_id %}">
+                <form method="post" action="{% url 'dashboard:edit_trainer' trainer.trainer_id %}">
                     {% csrf_token %}
                     <strong>{{ form|crispy }}</strong>
                     <div class="slider-btn">
@@ -44,7 +44,7 @@
                         ">Edit</button>                     
                     </div>
                 </form>
-                <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'trainers' %}">Go Back</a></button>
+                <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'dashboard:trainers' %}">Go Back</a></button>
             </div>
         </div>
 {% endblock content %}

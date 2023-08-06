@@ -29,14 +29,14 @@
                         <td>{{ potential_client.get_discipline_display }}</td>
                     </tr>
                 </table>
-            <form method="post" action="{% url 'email_trainer' trainer.trainer_id %}">
+            <form method="post" action="{% url 'dashboard:email_trainer' trainer.trainer_id %}">
                 {% csrf_token %}
                 <strong>{{ form|crispy }}</strong>
                 <div class="slider-btn">
                     <button type="submit" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Send Email</button>
                 </div>
             </form>
-            <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'potential_clients' %}">Go Back</a></button>
+            <button style="margin-bottom: 10px;" text="text" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><a href="{% url 'dashboard:potential_clients' %}">Go Back</a></button>
         </div>
     </div>
     </div>
