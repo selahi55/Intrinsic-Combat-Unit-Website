@@ -1,0 +1,298 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Intrinsic Combat Unit </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+    <!-- Place favicon.ico in the root Internist, General Practitonery -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dripicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body>
+    <div class="home-2">
+        <!-- header -->
+        <header class="header-area">
+
+            <div id="header-sticky" class="menu-area menu-area2">
+                <div class="container">
+                    <div class="second-menu">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo2">
+                                    <a href="{% url 'accounts:home' %}"><img src="{% static 'img/logo/w_logo.png' %}" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu text-right pr-15">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-sub">
+                                                <a href="{% url 'accounts:home' %}">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'accounts:about' %}">About Us</a>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="services.html">Services</a>
+                                                <ul>
+                                                    <li><a href="services.html">Services</a></li>
+                                                    <li><a href="services-detail.html">Services Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub"><a href="#">Other Page</a>
+                                                <ul>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="team.html">Team</a></li>
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="departments.html">Classes</a>
+                                                <ul>
+                                                    <li><a href="departments.html">Departments</a></li>
+                                                    <li><a href="departments-detail.html">Departments Details</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="has-sub">
+                                                <a href="blog.html">Blog</a>
+                                                <ul>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                <div class="right-menu">
+                                    <ul>
+                                        <li>
+                                            <div class="menu-search text-right">
+                                                <a href="#" data-toggle="modal" data-target=".popup1">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                                <input type="text" placeholder="Enter Name">
+                                            </div>
+                                        </li>
+                                        <li><a href="{% url 'accounts:contact' %}" class="top-btn">Join Now</a></li>
+                                    </ul>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile-menu"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+        
+        <!-- Errors or Messages -->
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+        </ul>
+        {% endif %}
+
+        <!-- Main Content -->
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- footer -->
+        <footer class="footer-bg footer-p pt-90">
+            <div class="footer-top-heiding">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="section-title">
+                                <h2>Subscribe To Our Newsletter For Latest Updates</h2>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="newslater-area">
+                                <form name="ajax-form" id="contact-form4" action="#" method="post"
+                                    class="contact-form newslater">
+                                    <div class="form-group">
+                                        <input class="form-control" id="email2" name="email" type="email"
+                                            placeholder="Email Address..." value="" required="">
+                                        <button type="submit" class="btn btn-custom" id="send2">Subscribe <i
+                                                class="fas fa-chevron-right"></i></button>
+                                    </div>
+                                    <!-- /Form-email -->
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-top pb-50">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-xl-3 col-lg-3 col-sm-6">
+
+                            <div class="footer-widget mb-30">
+                                <div class="flog mb-35">
+                                    <a href="#"><img src="{% static 'img/logo/w_logo.png' %}" alt="logo"
+                                            style="max-width: 150px;"></a>
+                                </div>
+                                <div class="f-contact">
+                                    <ul>
+                                        <li>
+                                            <i class="icon fa-clock"></i>
+                                            <span>+923064447427</span>
+                                            <span>180 DD,PHASE 4,DHA, LAHORE</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon dripicons-mail"></i>
+                                            <span><a href="mailto:Intrinsiccombatunit@gmail.com">Intrinsiccombatunit@gmail.com</a></span>
+                                            <span><a href="{% url 'accounts:login' %}">Login if Admin</a></span>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Our Links</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Partners</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Career</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Other Links</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Project</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Latest Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-text mb-20">
+                                    <p>The <strong style="color:white">ICU</strong>: A sanctuary for fighters, whether
+                                        seasoned athletes or
+                                        beginners. We
+                                        welcome anyone, and everyone, looking to enhance the quality of their lives
+                                        through adopting values of discipline, grit, and perseverance alongside
+                                        integrating essential self-defense skills.</p>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <style>
+                                                svg {
+                                                    fill: #000000
+                                                }
+                                            </style>
+                                            <path
+                                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                        </svg></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <path
+                                                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-12">
+                            &copy; 2023 Intrinsic Combat Unit
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+    </div>
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/one-page-nav-min.js' %}"></script>
+    <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/ajax-form.js' %}"></script>
+    <script src="{% static 'js/paroller.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/js_isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/parallax-scroll.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/element-in-view.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+<!-- Mirrored from zcube.in/hitup/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jul 2023 14:07:13 GMT -->
+
+</html>

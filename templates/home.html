@@ -1,0 +1,1406 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- main-area -->
+<main>
+    <!-- slider-area -->
+    <section id="parallax2" class="slider-area fix p-relative">
+
+        <div class="slider-shape ss-two layer" data-depth="0.30">
+            <div class="per-text">
+                <h2>We Build<span>Champions</span></h2>
+            </div>
+        </div>
+
+        <div class="slider-shape ss-six layer" data-depth="0.15"><img src="{% static 'img/bg/heade-object.png' %}"
+                alt="shape">
+        </div>
+        <div class="slider-shape ss-eight layer" data-depth="0.50"><img src="{% static 'img/bg/header-img6.png' %}"
+                alt="shape">
+        </div>
+        <div class="slider-active2">
+            <div class="single-slider slider-bg d-flex align-items-center"
+                style="background-image:url(static/img/bg/header-bg1.png); background-repeat: no-repeat; background-position: right;background-size: inherit;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="slider-content s-slider-content text-left">
+                                <h2 data-animation="fadeInUp" data-delay=".4s">
+                                    <span>INTRINSIC <br></span>
+                                    COMBAT <br>
+                                    <span>UNIT</span>
+                                </h2>
+                                <p data-animation="fadeInUp" data-delay=".6s">The <strong>ICU</strong>: A sanctuary for fighters,
+                                    whether seasoned athletes or beginners. We
+                                    welcome anyone, and everyone, looking to enhance the quality of their lives
+                                    through adopting values of <strong>discipline</strong>, grit, and <strong>perseverance</strong> alongside
+                                    integrating essential <strong>self-defense skills.</strong></p>
+                                <div class="slider-btn mt-25">
+                                    <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Learn
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- slider-area-end -->
+    <!-- booking-area -->
+    <section id="booking" class="booking-area p-relative">
+        <div class="container">
+            <form aria-disabled="true" class="contact-form">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <ul>
+                            <li>
+                                <div class="contact-field p-relative c-name">
+                                    <img src="{% static 'img/bg/ad-icon1.png' %}">
+                                    <input type="text" placeholder="180 DD,PHASE 4,DHA" disabled>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-field p-relative c-name">
+                                    <img src="{% static 'img/bg/ad-icon4.png' %}">
+                                    <select>
+                                        <option>USMAN ZULFIQUAR KHAN</option>
+                                        <option>ABID AMIN</option>
+                                        <option>REHAN URIBE</option>
+                                        <option>BEHRAM NIAZI</option>
+                                        <option>RAFAY TARIQ</option>
+                                        <option>NASHMIA ASAD KHAN</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-field p-relative c-name">
+                                    <img src="{% static 'img/bg/ad-icon2.png' %}">
+                                    <input type="text" placeholder="Open 7AM-11PM" disabled>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-field p-relative c-name">
+                                    <img src="{% static 'img/bg/ad-icon3.png' %}">
+                                    <select>
+                                        <option>Boxing</option>
+                                        <option>MMA-Wrestling</option>
+                                        <option>MMA-Boxing</option>
+                                        <option>Strength and Conditioning</option>
+                                        <option>Personal Training</option>
+                                        <option>Kids</option>
+                                    </select>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="slider-btn">
+                                    <button class="btn ss-btn" data-animation=""="fadeInRight" data-delay=".8s"><a
+                                            href="{% url 'accounts:contact' %}">Book your Appointment</a></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- booking-area-end -->
+
+    <!-- about-area -->
+    <section id="about" class="about-area about-p mt-80 pt-120 pb-120 p-relative">
+        <div class="parolx-text-right">About Us</div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="s-about-img p-relative">
+                        <img src="{% static 'img/bg/about-img.png' %}" alt="img">
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="about-content s-about-content pl-30">
+                        <div class="section-title mb-50">
+                            <h2>WHY COMBAT SPORTS?</h2> <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+                        </div>
+                        <h3 id="information" style="color: #ff5d1f;">FITNESS, RESPECT, DISCIPLINE, HUMILITY</h3>
+                        <p>Embracing the art of combat as a sport, promises a physically fit
+                            lifestyle with the intrinsic values of respect, discipline, humility, and
+                            the confidence to face any and all obstacles in life. Learning how to
+                            defend yourself, training with aggresion, not anger, and using that
+                            part of your life as a therapeutic relief, builds character. At the I.C.U,
+                            we teach children and adults of all ages and genders, the value of
+                            acquiring the skill of mixed martial arts, to use it if necessary in life,
+                            but gain the pleasure of sport and fitness from it.
+                        </p>
+                        <h3 id="information" style="color: #ff5d1f;">PHYSICAL AND MENTAL WELL-BEING</h3>
+                        <p>Physical activity that engages the entire body in natural and
+                            functional movements is directly related to mental and physical wellbeing, while it enhances
+                            the body's "happy" hormones. Exercising
+                            the body in it's natural state promotes longevity, inner peace, and a
+                            spiritual balance which can substantially improve the quality of one's
+                            life.
+                        </p>
+                        <h3 id="information" style="color: #ff5d1f;">INTER-PERSONAL DEVELOPMENT</h3>
+                        <p>At the I.C.U we encourage familial bonds, camaraderie, and an
+                            environment of learning amidst like minded individuals from various
+                            walks of life. We have adopted the principles of engaging in sport,
+                            detached from pride, for the development of life long community ties
+                            that everyone can benefit from.
+                        </p>
+                        <div class="slider-btn mt-15">
+                            <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-area-end -->
+
+
+    <!-- services-area -->
+    <section id="services" class="services-area services-bg pt-120 pb-120 p-relative" style="background: #24283e;">
+        <div class="parolx-text-left">Our Services</div>
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="about-content s-about-content pl-30">
+                        <div class="section-title mb-50">
+                            <h2>Our Services</h2>
+                            <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+                        </div>
+                        <p>
+                        At the <strong>ICU</strong>, we strive to create a welcoming and supportive community, where individuals of all
+                        backgrounds can come together to pursue their fitness ambitions. <strong>With a state-of-the-art
+                        facility</strong> and an array of <strong>specialized classes</strong>, we offer an unrivaled fitness experience that
+                        caters to diverse interests and goals. Whether you're looking to build <strong>strength</strong>, master <strong>combat
+                        sports</strong>, or find inner peace through <strong>yoga</strong>, our passionate team is committed to helping you
+                        transform your life and unlock your full potential. Join us on this exhilarating <strong>fitness journey</strong>
+                        and discover a newfound passion for health and wellness like never before.
+                        </p>
+
+
+
+
+
+
+
+
+
+
+                        <p>Join our welcoming fitness community and embark on an <em>exhilarating journey</em> to
+                            <em>unlock your full potential!</em>
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="s-single-services text-center active">
+                                <div class="services-icon">
+                                    <img src="{% static 'img/bg/s-icon1-1.png' %}" alt="img">
+                                </div>
+                                <div class="second-services-content">
+                                    <h5><a href="services-detail.html">Boxing</a></h5>
+                                    <p>Step into the ring</em> and master the art of pugilism with our
+                                        <em>high-intensity boxing classes</em>, led by experienced instructors.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="s-single-services text-center">
+                                <div class="services-icon">
+                                    <img src="{% static 'img/bg/s-icon4-2.png' %}" alt="img">
+                                </div>
+                                <div class="second-services-content">
+                                    <h5><a href="services-detail.html">MMA</a></h5>
+                                    <p>Take on the challenge of wrestling and kickboxing
+                                        in our
+                                        <em>intense and engaging MMA classes</em>.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="s-single-services text-center">
+                                <div class="services-icon">
+                                    <img src="{% static 'img/bg/s-icon3.png' %}" alt="img">
+                                </div>
+                                <div class="second-services-content">
+                                    <h5><a href="services-detail.html">Strength and Conditioning</a></h5>
+                                    <p>Our <em>top-notch programs</em> cater to all
+                                        fitness levels, offering personalized workouts to <em>efficiently and safely
+                                            achieve your
+                                            goals</em>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="s-single-services text-center">
+                                <div class="services-icon">
+                                    <img src="{% static 'img/bg/s-icon1.png' %}" alt="img">
+                                </div>
+                                <div class="second-services-content">
+                                    <h5><a href="services-detail.html">Yoga</a></h5>
+                                    <p>Find <em>mind-body harmony</em> in our serene yoga sessions, improving
+                                        flexibility, balance, and mental focus.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="padding-top: 30px;">
+                            <div class="s-single-services text-center">
+                                <div class="services-icon">
+                                    <img src="{% static 'img/bg/s-icon4.png' %}" alt="img">
+                                </div>
+                                <div class="second-services-content">
+                                    <h5><a href="services-detail.html">Personal Training</a></h5>
+                                    <p>Get <em>one-on-one attention</em> and a customized
+                                        approach to reach your fitness goals with our tailored sessions.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="padding-top: 5px;">
+                            <div class="s-single-services text-center">
+                                <div class="services-icon">
+                                    <img src="{% static 'img/bg/s-icon2.png' %}" alt="img">
+                                </div>
+                                <div class="second-services-content">
+                                    <h5><a href="services-detail.html">Kids</a></h5>
+                                    <p>Fitness is for everyone, even the little ones. Our <em>fun
+                                            and safe kids' programs</em> instill healthy habits and a love for physical
+                                        activity.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- services-area-end -->
+
+
+
+    <!-- Our Class Schedule Area Start -->
+    <section class="class-schedule-area pt-120 pb-120 p-relative">
+        <div class="parolx-text-right">Time Table</div>
+        <div class="section-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title mb-50">
+                            <h2>Our Class Schedule</h2>
+                            <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!-- Class Schedule Tab Start-->
+                    <div class="col-sm-12">
+                        <div class="class-schedule-tab-area">
+                            <nav>
+                                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="monday" data-toggle="tab" href="#nav-monday"
+                                        role="tab" aria-selected="true">Monday</a>
+                                    <a class="nav-item nav-link" id="tuesday" data-toggle="tab" href="#nav-tuesday"
+                                        role="tab" aria-selected="false">Tuesday</a>
+                                    <a class="nav-item nav-link" id="wednesday" data-toggle="tab" href="#nav-wednesday"
+                                        role="tab" aria-selected="false">Wednesday</a>
+                                    <a class="nav-item nav-link" id="thursday" data-toggle="tab" href="#nav-thursday"
+                                        role="tab" aria-selected="false">Thursday</a>
+                                    <a class="nav-item nav-link" id="friday" data-toggle="tab" href="#nav-friday"
+                                        role="tab" aria-selected="false">Friday</a>
+                                    <a class="nav-item nav-link" id="saturday" data-toggle="tab" href="#nav-saturday"
+                                        role="tab" aria-selected="false">Saturday</a>
+                                    <a class="nav-item nav-link" id="sunday" data-toggle="tab" href="#nav-sunday"
+                                        role="tab" aria-selected="false">Sunday</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-monday" role="tabpanel"
+                                    aria-labelledby="monday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="nav-tuesday" role="tabpanel" aria-labelledby="tuesday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="nav-wednesday" role="tabpanel"
+                                    aria-labelledby="wednesday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="nav-thursday" role="tabpanel" aria-labelledby="thursday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="nav-friday" role="tabpanel" aria-labelledby="friday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="nav-saturday" role="tabpanel" aria-labelledby="saturday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="nav-sunday" role="tabpanel" aria-labelledby="sunday">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon5.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Boxing</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon6.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Kids</h4>
+                                                        <p>Keaf Shen</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon7.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Body Building</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon8.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Kickboxing</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon1.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Cardio</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon2.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Strength and Conditioning</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon3.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>Yoga</h4>
+                                                        <p>Rachel Adam</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="box">
+                                                        <div class="icon">
+                                                            <img src="{% static 'img/bg/cl-icon4.png' %}" alt="cl-icon">
+                                                        </div>
+                                                        <h4>MMA-Wrestling</h4>
+                                                        <p>Lefew D. Loee</p>
+                                                        <span>06AM-08AM</span>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Class Schedule Tab End-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Class Schedule  Area End -->
+
+
+    <!-- vedio-area -->
+    <section class="video fix p-relative" style="background: #ff5d1f;">
+        <div class="parolx-text-left">Watch Us</div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title mb-50">
+                        <h2>WHY INTRINSIC COMBAT UNIT?</h2>
+                        <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+                    </div>
+                    <ol style="padding-left: 15px;
+                               font-size: 20px;">
+                        <li>-<strong>FOREIGN QUALIFIED</strong> TRAINERS</li>
+                        <li>-DEDICATED FLOOR FOR
+                            MATS AND RING.</li>
+                        <li>-DEDICATED WEIGHT-ROOM.</li>
+                        <br>
+                        <li><strong>DEDICATED BAGROOM</strong> INCLUDING:
+                            <ul>
+                                <li>-SPEEDBAGS</li>
+                                <li>-HEAVYBAGS</li>
+                                <li>-DOUBLE ENDBAGS</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="s-d-img p-relative">
+                        <img src="{% static 'img/bg/video-img1.png' %}" alt="img">
+                        <a href="https://www.youtube.com/watch?v=vKSA_idPZkc" class="video-i popup-video"> <img
+                                src="{% static 'img/bg/play-icon.png' %}" alt="img" class="active-icon"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- vedio-area-end -->
+
+
+
+    <!-- pricing-area -->
+    <section id="pricing" class="pricing-area p-relative pt-120 pb-60">
+        <div class="parolx-text-right">Value Pack</div>
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title center-align mb-60 text-center">
+                        <h2>Pricing Table</h2>
+                        <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-box text-center mb-60">
+                        <div class="pricing-head">
+                            <h4 style="	font-size: 25px;">Single Class (3 Days)</h4>
+                            <div class="icon">
+                                <img src="{% static 'img/bg/price-icon1.png' %}" alt="pricon">
+                            </div>
+
+                        </div>
+                        <div class="pricing-body 0 text-center">
+                            <p>AVAIL A SINGLE CLASS IN ANY DISCIPLINE WITH WEIGHT
+                                ROOM ACCESS FOR 3 DAYS A WEEK.
+                            </p>
+                            <div class="price-count mt-20 mb-25">
+                                <h2><span>Starting from </span> 12,000PKR</h2>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-box text-center mb-60">
+                        <div class="pricing-head">
+                            <h4 style="	font-size: 25px;">Single Class (5 Days)</h4>
+                            <div class="icon">
+                                <img src="{% static 'img/bg/price-icon2.png' %}" alt="pricon">
+                            </div>
+
+                        </div>
+                        <div class="pricing-body  text-center">
+                            <p>
+                                AVAIL A SINGLE CLASS IN ANY DISCIPLINE WITH WEIGHT
+                                ROOM ACCESS FOR 5 DAYS A WEEK.
+                            </p>
+                            <div class="price-count mt-20 mb-25">
+                                <h2><span>Starting from </span> 15,000PKR</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-box text-center mb-60">
+                        <div class="pricing-head">
+                            <h4 style="	font-size: 32px;">Double Classes</h4>
+                            <div class="icon">
+                                <img src="{% static 'img/bg/price-icon3.png' %}" alt="pricon">
+                            </div>
+
+                        </div>
+                        <div class="pricing-body  text-center">
+                            <p>
+                                AVAIL 20 SESSIONS SHARED AMONGST ANY 2
+                                DISCIPLINES WITH WEIGHT ROOM ACCESS.
+                            </p>
+                            <div class="price-count mt-20 mb-25">
+                                <h2><span>Starting from </span> 18,500PKR</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-box text-center mb-60">
+                        <div class="pricing-head">
+                            <h4 style="	font-size: 30px;">Triple Classes</h4>
+                            <div class="icon">
+                                <img src="{% static 'img/bg/price-icon2.png' %}" alt="pricon">
+                            </div>
+
+                        </div>
+                        <div class="pricing-body text-center">
+                            <p>
+                                AVAIL 20 SESSIONS SHARED AMONGST ANY 3
+                                DISCIPLINES WITH WEIGHT ROOM ACCESS.
+                            </p>
+                            <div class="price-count mt-20 mb-25">
+                                <h2><span>Starting from </span> 23,000PKR</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing-area-end -->
+
+    <!-- testimonial-area -->
+    <section id="testimonios" class="testimonial-area testimonial-p pt-120 pb-90 fix p-relative"
+        style="background: #24283e;">
+        <div class="parolx-text-left">Testimonial</div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+                    <div class="section-title center-align mb-60 text-center">
+
+                        <h2>What Our Clients Say</h2>
+                        <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-12">
+                    <div class="testimonial-active">
+
+                        <div class="single-testimonial">
+                            <div class="testi-img">
+                                <img src="{% static 'img/testimonial/testimonial-img1.png' %}" alt="img">
+                            </div>
+                            <div class="single-testimonial-bg">
+                                <div class="com-icon"><img src="{% static 'img/testimonial/qutation.png' %}" alt="img">
+                                </div>
+                                <div class="testi-author">
+                                    <div class="ta-info">
+                                        <h6>Saad Syal</h6>
+                                        <span>Client for 2 years</span>
+
+                                    </div>
+                                </div>
+                                <p>Outstanding gym! Supportive community, empowering classes. Addicted to the energy and
+                                    results. Best fitness choice I made!</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="single-testimonial">
+                            <div class="testi-img">
+                                <img src="{% static 'img/testimonial/testimonial-img2.png' %}" alt="img">
+                            </div>
+                            <div class="single-testimonial-bg">
+                                <div class="com-icon"><img src="{% static 'img/testimonial/qutation.png' %}" alt="img">
+                                </div>
+                                <div class="testi-author">
+                                    <div class="ta-info">
+                                        <h6>Danial Ramzan</h6>
+                                        <span>Client for 11 months</span>
+
+                                    </div>
+                                </div>
+                                <p>Skilled trainers, friendly atmosphere. Improved my skills and fitness. Love the
+                                    adrenaline rush in every session!</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="single-testimonial">
+                            <div class="testi-img">
+                                <img src="{% static 'img/testimonial/testimonial-img3.png' %}" alt="img">
+                            </div>
+                            <div class="single-testimonial-bg">
+                                <div class="com-icon"><img src="{% static 'img/testimonial/qutation.png' %}" alt="img">
+                                </div>
+                                <div class="testi-author">
+                                    <div class="ta-info">
+                                        <h6>Shershah Zaman</h6>
+                                        <span>Client for 6 months</span>
+
+                                    </div>
+                                </div>
+                                <p>
+                                    Dynamic and welcoming gym! Motivating coaches, intense workouts. I gained strength
+                                    and confidence. Highly recommend!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- testimonial-area-end -->
+
+    <!-- blog-area -->
+    <section id="blog" class="blog-area  p-relative pt-100 pb-90 fix">
+        <div class="parolx-text-right">Our Classes</div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="section-title text-center mb-80">
+                        <h2>Our Classes</h2>
+                        <img src="{% static 'img/bg/circle-line-w.png' %}" alt="circle">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-post single-post-box mb-30">
+                        <div class="blog-thumb">
+                            <a href="blog-details.html">
+                                <img src="{% static 'img/blog/blog_img01.jpg' %}" alt="img">
+                            </a>
+                            <div class="ct-link">
+                                <a href="#">FITNESS</a>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="b-meta mb-20">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <i class="far fa-calendar-alt"></i> 7 March, 2019
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <i class="fas fa-user"></i> By Jhone Doe
+                                    </div>
+                                </div>
+                            </div>
+                            <h4><a href="blog-details.html">Praesent justo mauris, tincidunt vitae nisi
+                                    ultricies.</a></h4>
+                            <p>Integer auctor est nec semper hendrerit. Etiam sollicitudin enim in urna commodo,
+                                in dapibus velit elementum.</p>
+                            <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-post single-post-box active mb-30">
+                        <div class="blog-thumb">
+                            <a href="blog-details.html">
+                                <img src="{% static 'img/blog/blog_img02.jpg' %}" alt="img">
+                            </a>
+                            <div class="ct-link">
+                                <a href="#">FITNESS</a>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="b-meta mb-20">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <i class="far fa-calendar-alt"></i> 7 March, 2019
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <i class="fas fa-user"></i> By Jhone Doe
+                                    </div>
+                                </div>
+                            </div>
+                            <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi
+                                    ultricies.</a></h4>
+                            <p>Integer auctor est nec semper hendrerit. Etiam sollicitudin enim in urna commodo,
+                                in dapibus velit elementum.</p>
+                            <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-post single-post-box mb-30">
+                        <div class="blog-thumb">
+                            <a href="blog-details.html">
+                                <img src="{% static 'img/blog/blog_img03.jpg' %}" alt="img">
+                            </a>
+                            <div class="ct-link">
+                                <a href="#">FITNESS</a>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="b-meta mb-20">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <i class="far fa-calendar-alt"></i> 7 March, 2019
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <i class="fas fa-user"></i> By Jhone Doe
+                                    </div>
+                                </div>
+                            </div>
+                            <h4><a href="blog-details.html">User Experience Psychology And Performance
+                                    Smashing</a></h4>
+                            <p>Integer auctor est nec semper hendrerit. Etiam sollicitudin enim in urna commodo,
+                                in dapibus velit elementum.</p>
+                            <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- blog-area-end -->
+
+
+</main>
+<!-- main-area-end -->
+
+{% endblock content %}

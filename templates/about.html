@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+        <!-- main-area -->
+        <main>
+            <!-- breadcrumb-area -->
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(/static/img/testimonial/test-bg1.png)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                            <div class="breadcrumb-wrap text-center">
+                                <div class="breadcrumb-title mb-30">
+                                    <h2>About Us</h2>                                    
+                                </div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="{% url 'accounts:home' %}">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb-area-end -->
+				 <!-- about-area -->
+            <section id="about" class="about-area about-p pt-120 pb-120 p-relative">
+                <div class="parolx-text-right">About Us</div>
+                <div class="container">
+                    <div class="row align-items-center">					
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="s-about-img p-relative">
+                                <img src="{% static 'img/bg/about-img2.png' %}" alt="img">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="about-content s-about-content pl-30">
+                                <div class="section-title mb-50">
+                                    <h2>Let Us Find The Perfect Workout For You !</h2>                   <img src="{% static 'img/bg/circle-line.png' %}" alt="circle">               
+                                </div>
+                                <p>Fusce orci ligula, tincidunt ut metus vel, venenatis aliquet tortor. Duis et consequat enim. Curabitur pulvinar, dolor at pulvinar molestie, augue massa volutpat felis, at rhoncus tortor velit vel diam. Cras ac suscipit metus.</p>
+                                <p>Etiam fermentum ex orci, a ullamcorper erat tempor in. Nulla est ante, ullamcorper vitae dui vel, molestie feugiat sapien.</p>
+                                <p>Integer auctor est nec semper hendrerit. Etiam sollicitudin enim in urna commodo, in dapibus velit elementum. Ut congue nisl sapien, vel ultricies nulla tincidunt vitae. Maecenas non ligula quis massa consequat commodo eleifend ut velit. Vestibulum molestie nunc non libero posuere, quis pellentesque massa tempus.</p>
+    
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- about-area-end -->
+        </main>
+        <!-- main-area-end -->
+           
+    </body>
+
+<!-- Mirrored from zcube.in/hitup/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jul 2023 14:07:13 GMT -->
+</html>
+
+{% endblock content %}

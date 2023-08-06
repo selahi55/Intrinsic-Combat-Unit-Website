@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-13%o=ruhq!3-a$if#%0!3h8e+yxd^-2i9u@9@j982fannftqd&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['intrinsiccombatunit.com', ]
 
 # Application definition
 
@@ -127,7 +127,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [BASE_DIR / "static"] 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
@@ -143,7 +144,16 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_MAIL = 'shayaanelahi123@gmail.com'
 
+LOGIN_URL = 'accounts:login'
+LOGIN_REDIRECT_URL = 'dashboard:admin_dashboard'
+LOGOUT_REDIRECT_URL = 'accounts:home'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.auth.EmailAuthBackend',
+]

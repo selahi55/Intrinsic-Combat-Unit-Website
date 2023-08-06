@@ -1,0 +1,47 @@
+{% extends 'admin/dashboard_base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1 style="color: #000000; text-align: center; margin:10px">Trainer List</h1>
+<div class="card mb-4" style="margin: 10px;">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        <strong>{{ trainers.count }} Total Trainers</strong>
+    </div>
+    <div class="card-body">
+             <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email <!--{% if trainers %}<a href="{% url 'dashboard:email_all_trainers' %}">(Click here to email all)</a>{% endif %}--></th>
+                        <!-- Clients and Classes -->
+                        <th>Percentage</th>
+                        <th>Age</th>
+                        <th>Joined</th>
+                        <th>Modify</th>
+                    </tr>
+                </thead>
+                {% if trainers %}
+                    {% for trainer in trainers %}
+                    <tr>
+                        <td>{{ trainer.first_name }}</td>
+                        <td>{{ trainer.last_name }}</td>
+                        <td>{{ trainer.email }} <a href="{% url 'dashboard:email_trainer' trainer.trainer_id %}"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0l57.4-43c23.9-59.8 79.7-103.3 146.3-109.8l13.9-10.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176V384c0 35.3 28.7 64 64 64H360.2C335.1 417.6 320 378.5 320 336c0-5.6 .3-11.1 .8-16.6l-26.4 19.8zM640 336a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 353.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z"/></svg></a></td>
+                        <td>{{ trainer.percent }}%</td>
+                        <td>{{ trainer.age }}</td>
+                        <td>{{ trainer.joined }}</td>
+                        <td><a href="{% url 'dashboard:edit_trainer' trainer.trainer_id %}" style="color: blue;">Edit</a> / <a href="{% url 'dashboard:delete_trainer' trainer.trainer_id %}" style="color: blue;">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <th>No Potential Clients yet.</th>
+                    </tr>
+                {% endif %}
+            </table> 
+        </div>
+    </div>
+
+{% endblock content %}

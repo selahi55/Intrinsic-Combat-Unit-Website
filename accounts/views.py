@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from datetime import date
-from django.contrib.admin.views.decorators import staff_member_required
+from django.urls import reverse
 
 from django.core.mail import send_mail, send_mass_mail
 from django.conf import settings
@@ -45,4 +45,3 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
-
