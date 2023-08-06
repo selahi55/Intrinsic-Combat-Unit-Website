@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['intrinsiccombatunit.com', ]
+ALLOWED_HOSTS = ['intrinsiccombatunit.com', 'django-server-production-dd63.up.railway.app']
 
 # Application definition
 
